@@ -28,11 +28,11 @@
     let currentColor = colorPicker.value;
     let currentThickness = thicknessRange.value;
 
-    // ctx.lineCap = "round";
+    ctx.lineCap = "round";
 
-    // colorPicker.addEventListener("input", () => {
-    //   currentColor = colorPicker.value;
-    // });
+    colorPicker.addEventListener("input", () => {
+      currentColor = colorPicker.value;
+    });
 
     // thicknessRange.addEventListener("input", () => {
     //   currentThickness = thicknessRange.value;
