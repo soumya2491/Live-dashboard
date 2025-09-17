@@ -104,6 +104,7 @@
           }
         }
       }
+      
     });
 
     // clearBtn.addEventListener("click", () => {
