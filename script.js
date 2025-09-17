@@ -81,30 +81,30 @@
       }
     }
 
-    // // Draw all strokes from DB
-    // onValue(strokesRef, (snapshot) => {
-    //   ctx.clearRect(0, 0, canvas.width, canvas.height);
-    //   const strokes = snapshot.val();
-    //   if (strokes) {
-    //     for (const key in strokes) {
-    //       const stroke = strokes[key];
-    //       if (stroke.length > 0) {
-    //         ctx.beginPath();
-    //         for (let i = 0; i < stroke.length; i++) {
-    //           const p = stroke[i];
-    //           ctx.strokeStyle = p.color;
-    //           ctx.lineWidth = p.thickness;
-    //           if (i === 0) {
-    //             ctx.moveTo(p.x, p.y);
-    //           } else {
-    //             ctx.lineTo(p.x, p.y);
-    //             ctx.stroke();
-    //           }
-    //         }
-    //       }
-    //     }
-    //   }
-    // });
+    // Draw all strokes from DB
+    onValue(strokesRef, (snapshot) => {
+      ctx.clearRect(0, 0, canvas.width, canvas.height);
+      const strokes = snapshot.val();
+      if (strokes) {
+        for (const key in strokes) {
+          const stroke = strokes[key];
+          if (stroke.length > 0) {
+            ctx.beginPath();
+            for (let i = 0; i < stroke.length; i++) {
+              const p = stroke[i];
+              ctx.strokeStyle = p.color;
+              ctx.lineWidth = p.thickness;
+              if (i === 0) {
+                ctx.moveTo(p.x, p.y);
+              } else {
+                ctx.lineTo(p.x, p.y);
+                ctx.stroke();
+              }
+            }
+          }
+        }
+      }
+    });
 
     // clearBtn.addEventListener("click", () => {
     //   remove(strokesRef)
