@@ -1,0 +1,28 @@
+body {
+      text-align: center;
+      font-family: Arial, sans-serif;
+      background: #f0f0f0;
+      margin: 20px;
+    }
+    /* canvas {
+      border: 2px solid black;
+      cursor: crosshair;
+      display: block;
+      margin: 20px auto;
+      background: #fff;
+    }
+    #controls {
+      margin-bottom: 10px;
+      display: flex;
+      justify-content: center;
+      gap: 15px;
+      align-items: center;
+    }
+    button, input[type=color], input[type=range] {
+      font-size: 16px;
+      padding: 5px 10px;
+      cursor: pointer;
+    }
+    label {
+      font-weight: bold;
+    } */
