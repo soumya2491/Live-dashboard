@@ -48,14 +48,14 @@
       drawPoint(e.offsetX, e.offsetY, currentColor, currentThickness, true);
     });
 
-    // canvas.addEventListener("mouseup", () => {
-    //   drawing = false;
-    //   // Push whole stroke at once
-    //   if (currentStroke.length > 0) {
-    //     push(strokesRef, currentStroke);
-    //     currentStroke = [];
-    //   }
-    // });
+    canvas.addEventListener("mouseup", () => {
+      drawing = false;
+      // Push whole stroke at once
+      if (currentStroke.length > 0) {
+        push(strokesRef, currentStroke);
+        currentStroke = [];
+      }
+    });
 
     // canvas.addEventListener("mouseleave", () => {
     //   if (drawing) {
