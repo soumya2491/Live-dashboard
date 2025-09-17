@@ -24,9 +24,9 @@
     const thicknessRange = document.getElementById("thicknessRange");
     const clearBtn = document.getElementById("clearBtn");
 
-    // let drawing = false;
-    // let currentColor = colorPicker.value;
-    // let currentThickness = thicknessRange.value;
+    let drawing = false;
+    let currentColor = colorPicker.value;
+    let currentThickness = thicknessRange.value;
 
     // ctx.lineCap = "round";
 
