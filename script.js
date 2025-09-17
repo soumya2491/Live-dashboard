@@ -34,9 +34,9 @@
       currentColor = colorPicker.value;
     });
 
-    // thicknessRange.addEventListener("input", () => {
-    //   currentThickness = thicknessRange.value;
-    // });
+        thicknessRange.addEventListener("input", () => {
+        currentThickness = thicknessRange.value;
+        });
 
     // let currentStroke = [];
 
