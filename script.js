@@ -13,16 +13,16 @@
       measurementId: "G-FQ36R4DQR6"
     };
 
-    // const app = initializeApp(firebaseConfig);
-    // const db = getDatabase(app);
-    // const strokesRef = ref(db, "strokes");
+    const app = initializeApp(firebaseConfig);
+    const db = getDatabase(app);
+    const strokesRef = ref(db, "strokes");
 
-    // const canvas = document.getElementById("board");
-    // const ctx = canvas.getContext("2d");
+    const canvas = document.getElementById("board");
+    const ctx = canvas.getContext("2d");
 
-    // const colorPicker = document.getElementById("colorPicker");
-    // const thicknessRange = document.getElementById("thicknessRange");
-    // const clearBtn = document.getElementById("clearBtn");
+    const colorPicker = document.getElementById("colorPicker");
+    const thicknessRange = document.getElementById("thicknessRange");
+    const clearBtn = document.getElementById("clearBtn");
 
     // let drawing = false;
     // let currentColor = colorPicker.value;
