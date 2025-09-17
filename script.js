@@ -67,23 +67,19 @@
       }
     });
 
-    canvas.addEventListener("mousemove", (e) => {
-      if (!drawing) return;
-      currentStroke.push({ x: e.offsetX, y: e.offsetY, color: currentColor, thickness: currentThickness });
-      drawPoint(e.offsetX, e.offsetY, currentColor, currentThickness, false);
-    });
+ 
 
-    // function drawPoint(x, y, color, thickness, moveToStart) {
-    //   ctx.strokeStyle = color;
-    //   ctx.lineWidth = thickness;
-    //   if (moveToStart) {
-    //     ctx.beginPath();
-    //     ctx.moveTo(x, y);
-    //   } else {
-    //     ctx.lineTo(x, y);
-    //     ctx.stroke();
-    //   }
-    // }
+    function drawPoint(x, y, color, thickness, moveToStart) {
+      ctx.strokeStyle = color;
+      ctx.lineWidth = thickness;
+      if (moveToStart) {
+        ctx.beginPath();
+        ctx.moveTo(x, y);
+      } else {
+        ctx.lineTo(x, y);
+        ctx.stroke();
+      }
+    }
 
     // // Draw all strokes from DB
     // onValue(strokesRef, (snapshot) => {
