@@ -67,11 +67,11 @@
       }
     });
 
-    // canvas.addEventListener("mousemove", (e) => {
-    //   if (!drawing) return;
-    //   currentStroke.push({ x: e.offsetX, y: e.offsetY, color: currentColor, thickness: currentThickness });
-    //   drawPoint(e.offsetX, e.offsetY, currentColor, currentThickness, false);
-    // });
+    canvas.addEventListener("mousemove", (e) => {
+      if (!drawing) return;
+      currentStroke.push({ x: e.offsetX, y: e.offsetY, color: currentColor, thickness: currentThickness });
+      drawPoint(e.offsetX, e.offsetY, currentColor, currentThickness, false);
+    });
 
     // function drawPoint(x, y, color, thickness, moveToStart) {
     //   ctx.strokeStyle = color;
