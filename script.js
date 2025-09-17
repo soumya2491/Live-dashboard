@@ -57,15 +57,15 @@
       }
     });
 
-    // canvas.addEventListener("mouseleave", () => {
-    //   if (drawing) {
-    //     drawing = false;
-    //     if (currentStroke.length > 0) {
-    //       push(strokesRef, currentStroke);
-    //       currentStroke = [];
-    //     }
-    //   }
-    // });
+    canvas.addEventListener("mouseleave", () => {
+      if (drawing) {
+        drawing = false;
+        if (currentStroke.length > 0) {
+          push(strokesRef, currentStroke);
+          currentStroke = [];
+        }
+      }
+    });
 
     // canvas.addEventListener("mousemove", (e) => {
     //   if (!drawing) return;
