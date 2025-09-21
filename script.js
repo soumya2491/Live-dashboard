@@ -43,7 +43,7 @@
     canvas.addEventListener("mousedown", (e) => {
       drawing = true;
       currentStroke = [];
-      
+
       // Add first point of stroke
       currentStroke.push({ x: e.offsetX, y: e.offsetY, color: currentColor, thickness: currentThickness });
       drawPoint(e.offsetX, e.offsetY, currentColor, currentThickness, true);
@@ -58,6 +58,7 @@
       }
     });
 
+
     canvas.addEventListener("mouseleave", () => {
       if (drawing) {
         drawing = false;
@@ -67,6 +68,9 @@
         }
       }
     });
+
+
+    
 
  
 
