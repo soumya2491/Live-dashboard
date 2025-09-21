@@ -69,11 +69,6 @@
       }
     });
 
-
-    
-
- 
-
     function drawPoint(x, y, color, thickness, moveToStart) {
       ctx.strokeStyle = color;
       ctx.lineWidth = thickness;
