@@ -106,12 +106,12 @@
       }
     });
 
-    // clearBtn.addEventListener("click", () => {
-    //   remove(strokesRef)
-    //     .then(() => {
-    //       ctx.clearRect(0, 0, canvas.width, canvas.height);
-    //     })
-    //     .catch((error) => {
-    //       console.error("Error clearing database:", error);
-    //     });
-    // });
+    clearBtn.addEventListener("click", () => {
+      remove(strokesRef)
+        .then(() => {
+          ctx.clearRect(0, 0, canvas.width, canvas.height);
+        })
+        .catch((error) => {
+          console.error("Error clearing database:", error);
+        });
+    });
